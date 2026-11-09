@@ -1,0 +1,27 @@
+{
+  "name": "taller-api-libros",
+  "version": "1.0.0",
+  "description": "API REST de libros con Node.js, Express, PostgreSQL y JWT",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "db:init": "node scripts/init-db.js",
+    "token:vencido": "node scripts/token-vencido.js",
+    "test:postman": "newman run postman/Taller_API_Libros.postman_collection.json -e postman/local.postman_environment.json"
+  },
+  "keywords": ["express", "jwt", "postgresql", "crud"],
+  "license": "ISC",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "newman": "^6.2.3"
+  }
+}
